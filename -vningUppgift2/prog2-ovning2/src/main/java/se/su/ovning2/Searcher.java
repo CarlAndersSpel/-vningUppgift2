@@ -1,12 +1,14 @@
 package se.su.ovning2;
 
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.SortedSet;
 
 public class Searcher implements SearchOperations {
-
+  private final Map<Recording, Recording> recordingMap = new HashMap<>();  //Recording är nyckel till Recording
   public Searcher(Collection<Recording> data) {
-
+                                                                          //gör flera hasmaps med olika variabler. behöver ungefär 5 av de. Glöm inte att göra beräkningarna i varje metod för korrespontenta del i searcher klassen.
     Collection<Recording> recordings = data;
   }
 
