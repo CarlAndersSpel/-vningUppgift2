@@ -8,12 +8,18 @@ import java.util.SortedSet;
 public class Searcher implements SearchOperations {
   private final Map<Recording, Recording> recordingMap = new HashMap<>();  //Recording är nyckel till Recording
   public Searcher(Collection<Recording> data) {
-                                                                          //gör flera hasmaps med olika variabler. behöver ungefär 5 av de. Glöm inte att göra beräkningarna i varje metod för korrespontenta del i searcher klassen.
+                                                                          //gör flera hashmaps med olika variabler. behöver ungefär 5 av de. Glöm inte att göra beräkningarna i varje metod för korrespontenta del i searcher klassen.
     Collection<Recording> recordings = data;
   }
 
+   //Hashset är osorterad treeset har en nyckel och en värd.
+
   @Override
-  public long numberOfArtists() {
+  public long numberOfArtists() {   //den ska returnera antalet artistet med get.size. man får en index hur många platser det är.  numberOfArtists.size.
+    //for ( ggfha : djjf){
+
+    
+    //}
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'numberOfArtists'");
   }
@@ -37,7 +43,7 @@ public class Searcher implements SearchOperations {
   }
 
   @Override
-  public Collection<String> getGenres() {
+  public Collection<String> getGenres() {   //om en recording har en artist
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'getGenres'");
   }
